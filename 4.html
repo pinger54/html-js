@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Меркулов</title>
+    <link rel=stylesheet type="text/css" href="css/style.css">
+</head>
+
+
+<body>
+
+    <table>
+        <tr>
+             <td>Фамилия</td>
+             <td>Имя</td>
+            <td>Отчество</td>
+            
+        </tr>
+        <tr>
+        	<td>Меркулов</td>
+            <td>Дмитрий</td>
+            <td>Владимирович</td>
+           
+        </tr>
+        <tr>
+             <td>Макейчик</td>
+            <td>Кирилл</td>
+            <td>Андреевич</td>
+        </tr>
+        <tr>
+            <td>Костин</td>
+            <td>Никита</td>
+            <td>Альбертович</td>
+          
+        </tr>
+    </table>
+    
+    <br>
+    
+    <button class="hide">Скрыть</button> <br><br>
+    <button class="show">Показать</button>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hide").click(function() {
+                $("tr:even").hide();
+            });
+            
+             $(".show").click(function() {
+                $("tr").show();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

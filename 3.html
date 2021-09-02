@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Меркулов</title>
+</head>
+
+<body>
+    
+    <ul>
+        <li><a href="#">ссылка</a></li>
+        <li><a href="#">ссылка</a></li>
+        <li>не ссылка</li>
+        <li><a href="#">ссылка</a></li>
+        <li>не ссылка</li>
+        <li>не ссылка</li>
+    </ul>
+
+
+    <button class="hide">Скрыть</button> <br><br>
+    <button class="show">Показать</button>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hide").click(function() {
+                $("[href]").hide();
+            });
+            
+             $(".show").click(function() {
+                $("[href]").show();
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Меркулов</title>
+</head>
+
+<body>
+
+    
+    <p align="center">Hello world! Hello world! Hello world! Hello world! Hello world! Hello world! Hello world!(по центру)</p>
+    
+    <p>Hello world! Hello world! Hello world! Hello world! Hello world! Hello world! Hello world!</p>
+    
+    <p align="center">Hello world! Hello world! Hello world! Hello world! Hello world! Hello world! Hello world!(по центру)</p>
+    
+    <p align="center">Hello world! Hello world! Hello world! Hello world! Hello world! Hello world! Hello world!(по центру)</p>
+    
+    <p>Hello world! Hello world! Hello world! Hello world! Hello world! Hello world! Hello world!</p>
+
+
+    <button class="hide">Клик, чтобы скрыть</button> <br><br>
+    <button class="show">Клик, чтобы показать</button>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".hide").click(function() {
+                $("[align=center]").hide();
+            });
+            
+             $(".show").click(function() {
+                $("[align=center]").show();
+            });
+        });
+
+    </script>
+</body>
+
+</html>
