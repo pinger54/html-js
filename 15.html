@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Меркулов</title>
+
+    <script>
+        function showdate() {
+            let date1 = new Date();
+
+            day = date1.getDate();
+            month = date1.getMonth();
+            year = date1.getFullYear();
+
+            let months = {
+                0:  31, 1:  29, 2:  31, 3:  30,
+                4:  31, 5:  30, 6:  31, 7:  31,
+                8:  30, 9:  31, 10: 30, 11: 31
+            };
+
+            day += 7;
+            if (day > months[month]) {
+                day = day % months[month];
+                month += 1;
+
+                if (month == 12)
+                    month = 0;
+            }
+
+            let date2 = new Date(year, month, day);
+            alert(date1);
+            alert(date2);
+        }
+    </script>
+</head>
+<body onload="showdate();">
+    
+</body>
+</html>
