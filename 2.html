@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Меркулов</title>
+<script language="JavaScript">
+function graph(obj)
+{
+var s=obj.nick.value
+if (s=="") alert("Укажите никнейм"); 
+}
+</script>
+</head>
+<body bgcolor="F8F8FF">
+<center>
+<h4>Регистрация пользователя</h4><br>
+<form name="data">
+<table bgcolor=#cccccc width=300 cellspacing=2 cellpadding=2 border=1>
+<tr><td> Никнейм пользователя</td><td><input type="text" name="nick" size=5 value=""
+onchange="CheckValNum(this.value)"></td></tr>
+<tr align=center><td colspan=2 bgcolor=#cccccc>
+<input type="button" value="
+Зарегистрироватся" onclick=graph(data)> </td></tr>
+</table>
+</form>
+</body>
+</html>
